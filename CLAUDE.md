@@ -47,11 +47,11 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 
 ## Current status / TODO
 
-1. [~] Swap placeholder SVGs in `images/` for Amy's real photos — About photo (`amy.jpg`) done; hero + portfolio in progress (album downloaded to `documents/`, untracked)
+1. [x] Real photos live: About (`amy.jpg`), hero (`hero.jpg`), and 54-photo editorial masonry gallery (`images/portfolio/`) per Amy's Website.docx brief. Legacy `portfolio-1..6.jpg` in `images/` are unused — remove after confirming nothing references them.
 2. [~] Replace placeholder text — bio done (real About text from Amy); still placeholder: prices, testimonials, contact email, Instagram handle
 3. [x] GitHub Pages verified: live at varunmoka7.github.io/amy-photography, built from main/root, HTTPS enforced
 4. [ ] Custom domain: **amyteng.com** (purchased by Amy). CNAME in Pages settings; DNS at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io`; enforce HTTPS
-5. [ ] SEO: meta description per section, Open Graph tags, favicon
+5. [x] SEO: meta description, Open Graph/Twitter tags, SVG favicon done. Note: og:image/og:url point at varunmoka7.github.io — update both when amyteng.com goes live.
 6. [ ] Later: Instagram feed section, client gallery links, testimonial photos
 7. [ ] Later (optional): booking form backend if email-only becomes insufficient
 
