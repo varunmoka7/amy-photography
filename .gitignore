@@ -1,3 +1,4 @@
 # Client originals and working files — never commit (usage-rights guardrail)
 documents/
 .DS_Store
+.gstack/
