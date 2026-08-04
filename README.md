@@ -1,13 +1,13 @@
 # Amy Photography — Website
 
-Portraits & family photography portfolio with a booking form. Pure HTML/CSS/JS — no build step, no dependencies.
+Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Booking is email-only for now.
 
 ## Structure
 
 ```
 index.html        — the whole site (single page)
 css/style.css     — all styling
-js/main.js        — nav, gallery lightbox, booking form
+js/main.js        — nav, gallery lightbox
 images/           — placeholder SVGs (swap with real photos)
 ```
 
@@ -24,7 +24,7 @@ python3 -m http.server 8000
 
 1. **Photos**: drop JPGs into `images/` (e.g. `hero.jpg`, `amy.jpg`, `portfolio-1.jpg`…) and update the `src` paths in `index.html`. Export at ~1600px wide max, JPG quality ~80, for fast loading.
 2. **Text**: edit bio, prices, testimonials, and contact details directly in `index.html`.
-3. **Booking form**: create a free form at [formspree.io](https://formspree.io), then replace `YOUR_FORM_ID` in `index.html` with your form ID. Submissions go to Amy's email.
+3. **Contact email**: replace the placeholder `hello@amyphotography.com` mailto links with Amy's real address.
 
 ## Deploy to GitHub Pages
 

@@ -45,36 +45,3 @@ lightbox.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
 });
-
-// Booking form — AJAX submit to Formspree with inline status
-const form = document.querySelector(".booking-form");
-const statusEl = form.querySelector(".form-status");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  if (form.action.includes("YOUR_FORM_ID")) {
-    statusEl.textContent =
-      "Form not connected yet — replace YOUR_FORM_ID in index.html with your Formspree ID.";
-    return;
-  }
-
-  statusEl.textContent = "Sending…";
-
-  try {
-    const res = await fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: { Accept: "application/json" },
-    });
-
-    if (res.ok) {
-      form.reset();
-      statusEl.textContent = "Thank you! Your inquiry is on its way — I'll reply within one business day.";
-    } else {
-      statusEl.textContent = "Something went wrong. Please email hello@amyphotography.com instead.";
-    }
-  } catch {
-    statusEl.textContent = "Network error. Please try again or email hello@amyphotography.com.";
-  }
-});

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
-  <rect width="1600" height="1000" fill="#e9dbc9"/>
-  <circle cx="800.0" cy="420.0" r="130.0" fill="#a8734f" opacity="0.35"/>
-  <circle cx="560.0" cy="550.0" r="90.0" fill="#a8734f" opacity="0.25"/>
-  <circle cx="1040.0" cy="550.0" r="90.0" fill="#a8734f" opacity="0.25"/>
-  <text x="50%" y="780.0" text-anchor="middle" font-family="Georgia, serif" font-size="55.0" fill="#a8734f" opacity="0.8">Replace with hero photo (hero.jpg)</text>
-</svg>

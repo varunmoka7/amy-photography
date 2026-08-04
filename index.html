@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amy Photography — Portraits &amp; Family</title>
-  <meta name="description" content="Warm, natural portrait and family photography by Amy. Book your session today." />
+  <title>Amy Teng Photography — Portraits &amp; Family, Berlin</title>
+  <meta name="description" content="Warm, natural portrait and family photography by Amy Teng, based in Berlin. Book your session today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -32,7 +32,7 @@
   <!-- ============ HERO ============ -->
   <section id="home" class="hero">
     <div class="hero-media">
-      <img src="images/hero.svg" alt="Family laughing together in golden-hour light" />
+      <img src="images/hero.jpg" alt="Couple standing together under a garden archway in soft natural light" />
     </div>
     <div class="hero-content container">
       <p class="eyebrow">Portrait &amp; Family Photographer</p>
@@ -45,18 +45,28 @@
     </div>
   </section>
 
+  <!-- ============ QUOTE ============ -->
+  <section class="quote-strip">
+    <div class="container">
+      <blockquote>
+        <p>&ldquo;Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever&hellip; it remembers little things, long after you have forgotten everything.&rdquo;</p>
+        <cite>&mdash; Aaron Siskind</cite>
+      </blockquote>
+    </div>
+  </section>
+
   <!-- ============ PORTFOLIO ============ -->
   <section id="portfolio" class="section">
     <div class="container">
       <p class="eyebrow">Portfolio</p>
       <h2>A few favourites</h2>
       <div class="gallery">
-        <figure class="gallery-item"><img src="images/portfolio-1.svg" alt="Mother and daughter portrait" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="images/portfolio-2.svg" alt="Family walking in a meadow" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="images/portfolio-3.svg" alt="Newborn portrait" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="images/portfolio-4.svg" alt="Couple at sunset" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="images/portfolio-5.svg" alt="Children playing outdoors" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="images/portfolio-6.svg" alt="Grandparents with grandchildren" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-1.jpg" alt="Expecting couple beneath a tree in golden evening light" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-2.jpg" alt="Engaged couple embracing beneath Tokyo Tower" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-3.jpg" alt="Portrait on an autumn path lined with golden leaves" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-4.jpg" alt="Relaxed natural-light portrait by a window" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-5.jpg" alt="Portrait in a purple yukata beside a temple pagoda" loading="lazy" /></figure>
+        <figure class="gallery-item"><img src="images/portfolio-6.jpg" alt="Winter portrait beside a tree in a city park" loading="lazy" /></figure>
       </div>
     </div>
   </section>
@@ -65,13 +75,13 @@
   <section id="about" class="section section-alt">
     <div class="container about-grid">
       <div class="about-photo">
-        <img src="images/amy.svg" alt="Amy, portrait photographer" loading="lazy" />
+        <img src="images/amy.jpg" alt="Amy, portrait photographer" loading="lazy" />
       </div>
       <div class="about-text">
         <p class="eyebrow">About</p>
         <h2>Hi, I&rsquo;m Amy.</h2>
-        <p>I believe the best photographs are the ones that feel like you — the giggles between poses, the way your kids hold your hand, the quiet looks that say everything. My sessions are relaxed, playful, and pressure-free.</p>
-        <p>Based locally and available for travel, I&rsquo;ve photographed hundreds of families, couples, and little ones over the years. I&rsquo;d love to tell your story next.</p>
+        <p>I&rsquo;m a portrait photographer from Vancouver, Canada, now calling Berlin home. My love for photography began in a high-school darkroom, developing film and printing black-and-white photographs by hand — watching an image slowly come to life felt like magic, and I knew then that photography would always be a part of me.</p>
+        <p>That curiosity became my career: eight years as a studio photographer taught me how to connect with people, put them at ease, and capture genuine expressions in just a few moments. Today I photograph individuals, couples, and families — preserving the quiet moments, genuine laughter, and little connections that become more meaningful with time.</p>
         <a href="#book" class="btn">Let&rsquo;s chat</a>
       </div>
     </div>
@@ -124,48 +134,17 @@
     </div>
   </section>
 
-  <!-- ============ BOOKING ============ -->
+  <!-- ============ CONTACT ============ -->
   <section id="book" class="section">
-    <div class="container booking-grid">
-      <div class="booking-intro">
-        <p class="eyebrow">Book a Session</p>
-        <h2>Let&rsquo;s make something beautiful</h2>
-        <p>Tell me a little about you and what you have in mind. I&rsquo;ll reply within one business day with availability and next steps.</p>
-        <ul class="contact-list">
-          <li>hello@amyphotography.com</li>
-          <li>Instagram: @amy.photography</li>
-        </ul>
-      </div>
-      <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
-      <form class="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>
-          Name
-          <input type="text" name="name" required autocomplete="name" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required autocomplete="email" />
-        </label>
-        <label>
-          Session type
-          <select name="session">
-            <option>Family Session</option>
-            <option>Portrait Session</option>
-            <option>Newborn &amp; Baby</option>
-            <option>Something else</option>
-          </select>
-        </label>
-        <label>
-          Preferred date (optional)
-          <input type="date" name="date" />
-        </label>
-        <label>
-          Tell me about your session
-          <textarea name="message" rows="4" placeholder="Who's it for? Any location ideas?"></textarea>
-        </label>
-        <button type="submit" class="btn">Send inquiry</button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
+    <div class="container booking-intro">
+      <p class="eyebrow">Book a Session</p>
+      <h2>Let&rsquo;s make something beautiful</h2>
+      <p>Send me a note with a little about you and what you have in mind. I&rsquo;ll reply within one business day with availability and next steps.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:hello@amyphotography.com">hello@amyphotography.com</a></li>
+        <li>Instagram: @amy.photography</li>
+      </ul>
+      <a class="btn" href="mailto:hello@amyphotography.com?subject=Session%20inquiry">Email to book</a>
     </div>
   </section>
 

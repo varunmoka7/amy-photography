@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <rect width="800" height="1000" fill="#ecdcc9"/>
-  <circle cx="400.0" cy="420.0" r="104.0" fill="#c98b62" opacity="0.35"/>
-  <circle cx="280.0" cy="550.0" r="72.0" fill="#c98b62" opacity="0.25"/>
-  <circle cx="520.0" cy="550.0" r="72.0" fill="#c98b62" opacity="0.25"/>
-  <text x="50%" y="780.0" text-anchor="middle" font-family="Georgia, serif" font-size="44.0" fill="#c98b62" opacity="0.8">Replace with photo 5</text>
-</svg>
