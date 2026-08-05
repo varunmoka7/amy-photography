@@ -3,6 +3,12 @@
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Frosted nav once scrolled past the hero top
+const header = document.querySelector(".site-header");
+const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
+onScroll();
+document.addEventListener("scroll", onScroll, { passive: true });
+
 // Mobile nav toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");

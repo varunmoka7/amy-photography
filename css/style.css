@@ -87,16 +87,22 @@ h3 { font-size: 1.5rem; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.site-header.scrolled {
   background: rgba(250, 246, 240, 0.9);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(61, 54, 48, 0.08);
+  border-bottom-color: rgba(61, 54, 48, 0.08);
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 1rem;
+  padding: 1.4rem 3rem;
 }
 
 .logo {
@@ -145,7 +151,8 @@ h3 { font-size: 1.5rem; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
 }
@@ -166,7 +173,9 @@ h3 { font-size: 1.5rem; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(250, 246, 240, 0.94) 0%, rgba(250, 246, 240, 0.72) 45%, rgba(250, 246, 240, 0.15) 100%);
+  background:
+    linear-gradient(rgba(250, 246, 240, 0.45), transparent 20%),
+    linear-gradient(100deg, rgba(250, 246, 240, 0.8) 0%, rgba(250, 246, 240, 0.42) 45%, rgba(250, 246, 240, 0.05) 100%);
 }
 
 .hero-content {
@@ -358,6 +367,8 @@ cite {
 }
 
 @media (max-width: 640px) {
+  .nav { padding: 1rem 1.25rem; }
+
   .nav-toggle { display: flex; }
 
   .nav-links {
