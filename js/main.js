@@ -26,6 +26,19 @@ navLinks.addEventListener("click", (e) => {
   }
 });
 
+// Hero slideshow
+const slides = document.querySelectorAll(".hero-slide");
+if (slides.length > 1) {
+  let current = 0;
+  const show = (i) => {
+    slides[current].classList.remove("is-active");
+    current = (i + slides.length) % slides.length;
+    slides[current].classList.add("is-active");
+  };
+  document.querySelector(".hero-prev").addEventListener("click", () => show(current - 1));
+  document.querySelector(".hero-next").addEventListener("click", () => show(current + 1));
+}
+
 // Contact form (Web3Forms)
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
