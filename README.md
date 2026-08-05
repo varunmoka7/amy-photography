@@ -1,14 +1,16 @@
-# Amy Photography — Website
+# Amy Teng Photography — Website
 
-Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Booking is email-only for now.
+**Live site: https://varunmoka7.github.io/amy-photography/**
+
+Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Contact via Web3Forms form (free tier) + email link.
 
 ## Structure
 
 ```
 index.html        — the whole site (single page)
 css/style.css     — all styling
-js/main.js        — nav, gallery lightbox
-images/           — placeholder SVGs (swap with real photos)
+js/main.js        — nav, hero slideshow, contact form, gallery lightbox
+images/           — real photos (hero slides + portfolio gallery)
 ```
 
 ## Open in Cursor
@@ -20,11 +22,10 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Swap in real content
+## Remaining placeholders
 
-1. **Photos**: drop JPGs into `images/` (e.g. `hero.jpg`, `amy.jpg`, `portfolio-1.jpg`…) and update the `src` paths in `index.html`. Export at ~1600px wide max, JPG quality ~80, for fast loading.
-2. **Text**: edit bio, prices, testimonials, and contact details directly in `index.html`.
-3. **Contact email**: replace the placeholder `hello@amyphotography.com` mailto links with Amy's real address.
+1. **Contact email**: `hello@amyphotography.com` is not real — replace with Amy's actual address.
+2. **Contact form key**: the Web3Forms `access_key` in `index.html` is `WEB3FORMS_KEY_PENDING` — register Amy's email at web3forms.com and swap in the real key to activate deliveries.
 
 ## Deploy to GitHub Pages
 
