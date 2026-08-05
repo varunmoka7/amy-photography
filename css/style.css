@@ -285,11 +285,81 @@ cite {
 }
 
 /* ---------- Contact ---------- */
-.booking-intro {
-  max-width: 36rem;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 4rem;
+  align-items: start;
 }
 
-.booking-intro p { color: var(--ink-soft); margin-bottom: 1.5rem; }
+.contact-intro p { color: var(--ink-soft); margin-bottom: 1.5rem; }
+
+.contact-form {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2.25rem;
+}
+
+.field { margin-bottom: 1.4rem; }
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.field label,
+.contact-form legend {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.45rem;
+}
+
+.field label span { color: var(--ink-soft); font-size: 0.8rem; }
+
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--cream);
+  border: 1px solid rgba(61, 54, 48, 0.18);
+  border-radius: 6px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--terracotta);
+}
+
+fieldset.field { border: none; padding: 0; }
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.98rem;
+  margin-bottom: 0.4rem;
+}
+
+.radio input {
+  accent-color: var(--terracotta);
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.botcheck { display: none; }
+
+.form-status { display: none; margin-top: 1rem; font-size: 0.95rem; }
+.form-status.ok { display: block; }
+.form-status.err { display: block; color: #a8402f; }
 
 .contact-list {
   list-style: none;
@@ -364,6 +434,8 @@ cite {
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
   .gallery { columns: 2; }
 }
 
@@ -388,6 +460,9 @@ cite {
 
   .gallery { columns: 2; column-gap: 0.75rem; }
   .gallery-item { margin-bottom: 0.75rem; }
+
+  .field-row { grid-template-columns: 1fr; gap: 0; }
+  .contact-form { padding: 1.75rem 1.4rem; }
 
   .section { padding-block: 4rem; }
 }

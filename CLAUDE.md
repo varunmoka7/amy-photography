@@ -43,7 +43,7 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 
 - **Preview locally**: `python3 -m http.server 8000` → http://localhost:8000
 - **Deploy**: commit + push to `main`; GitHub Pages redeploys automatically (~1 min)
-- **Booking**: email-only for now (`mailto:` links in the contact section) — no Formspree or form backend
+- **Booking**: contact form via Web3Forms free tier (no backend; POSTs to api.web3forms.com). Access key in `index.html` is `WEB3FORMS_KEY_PENDING` until Amy's real email is registered — swap it to activate. `mailto:` link kept as fallback
 
 ## Current status / TODO
 
