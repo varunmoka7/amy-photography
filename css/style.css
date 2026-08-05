@@ -252,8 +252,6 @@ h3 { font-size: 1.5rem; }
 
 .about-text p { margin-bottom: 1.25rem; color: var(--ink-soft); }
 
-.about-text .btn { margin-top: 0.5rem; }
-
 /* ---------- Quotes ---------- */
 blockquote {
   background: var(--white);
