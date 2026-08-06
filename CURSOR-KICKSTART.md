@@ -22,7 +22,7 @@ You are working on **Amy Photography**, a live portfolio website for a portraits
 
 ## Pending work (in priority order)
 1. Replace placeholder SVGs in `images/` with Amy's real photos (update `src` paths in `index.html`).
-2. Replace placeholder text: bio, prices, testimonials, email `hello@amyphotography.com`, Instagram handle.
+2. Replace placeholder text: bio, prices, testimonials, Instagram handle. (Contact email is real: `amyteng_@hotmail.com`.)
 3. Custom domain: add CNAME via GitHub Pages settings + DNS at registrar (A records 185.199.108.153 / .109 / .110 / .111, www CNAME → varunmoka7.github.io).
 4. Nice-to-haves later: SEO meta/OG tags, favicon, image optimization, Instagram link-out section.
 

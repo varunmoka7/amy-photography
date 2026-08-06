@@ -72,7 +72,7 @@ if (contactForm) {
       status.textContent = "Thank you — your note is on its way. I'll reply within one business day.";
       status.classList.add("ok");
     } catch {
-      status.textContent = "Hmm, that didn't go through. Please email me directly at hello@amyphotography.com.";
+      status.textContent = "Hmm, that didn't go through. Please email me directly at amyteng_@hotmail.com.";
       status.classList.add("err");
     } finally {
       btn.disabled = false;

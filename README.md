@@ -24,8 +24,7 @@ python3 -m http.server 8000
 
 ## Remaining placeholders
 
-1. **Contact email**: `hello@amyphotography.com` is not real — replace with Amy's actual address.
-2. **Contact form key**: the Web3Forms `access_key` in `index.html` is `WEB3FORMS_KEY_PENDING` — register Amy's email at web3forms.com and swap in the real key to activate deliveries.
+1. **Contact form key**: the Web3Forms `access_key` in `index.html` is `WEB3FORMS_KEY_PENDING` — register Amy's email (`amyteng_@hotmail.com`) at web3forms.com and swap in the real key to activate deliveries.
 
 ## Deploy to GitHub Pages
 

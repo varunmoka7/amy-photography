@@ -48,15 +48,15 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 ## Current status / TODO
 
 1. [x] Real photos live: About (`amy.jpg`), 5-slide hero slideshow, and 50-photo editorial masonry gallery (`images/portfolio/`). All images re-encoded to JPG q78 (2026-08-06); regenerate from `documents/album/` originals rather than re-compressing. Legacy `portfolio-1..6.jpg` and `cyberpunk/` deleted.
-2. [~] Placeholder text — only the contact email (`hello@amyphotography.com`) is fake; Instagram (@captivate.amy) is real; prices/testimonials sections were removed
+2. [x] Placeholder text — contact email now real (`amyteng_@hotmail.com`); Instagram (@captivate.amy) is real; prices/testimonials sections were removed
 3. [x] GitHub Pages verified: live at varunmoka7.github.io/amy-photography, built from main/root, HTTPS enforced
 4. [ ] Custom domain: **amyteng.com** (purchased by Amy). DNS FIRST at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io` — THEN CNAME in Pages settings; enforce HTTPS
 5. [x] SEO: Berlin-targeted title/meta, LocalBusiness JSON-LD, canonical, OG/Twitter tags, favicon. Note: og:url/og:image/canonical/JSON-LD urls point at varunmoka7.github.io — update all when amyteng.com goes live.
-6. [ ] Before launch (waiting on Amy): real email (3 places: contact list, mailto, js/main.js fallback), Web3Forms key + consent checkbox + captcha, Impressum/Datenschutz page
+6. [ ] Before launch (waiting on Amy): Web3Forms key + consent checkbox + captcha, Impressum/Datenschutz page. Real email done (`amyteng_@hotmail.com` in all 3 places)
 7. [ ] Later: Instagram feed section, client gallery links, testimonial photos, German-language page
 
 ## Guardrails
 
 - Ask before deleting files, restructuring folders, or changing the design system
 - Never commit real client photos without confirming usage rights
-- Contact email is real: `amyteng_@hotmail.com`. Placeholder Instagram handle (`@amy.photography`) is not real — confirm actual details before publishing them
+- Contact details are real: email `amyteng_@hotmail.com`, Instagram @captivate.amy — confirm any new contact details before publishing them
