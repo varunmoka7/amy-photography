@@ -47,16 +47,16 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 
 ## Current status / TODO
 
-1. [x] Real photos live: About (`amy.jpg`), hero (`hero.jpg`), and 54-photo editorial masonry gallery (`images/portfolio/`) per Amy's Website.docx brief. Legacy `portfolio-1..6.jpg` in `images/` are unused — remove after confirming nothing references them.
-2. [~] Replace placeholder text — bio done (real About text from Amy); still placeholder: prices, testimonials, contact email, Instagram handle
+1. [x] Real photos live: About (`amy.jpg`), 5-slide hero slideshow, and 50-photo editorial masonry gallery (`images/portfolio/`). All images re-encoded to JPG q78 (2026-08-06); regenerate from `documents/album/` originals rather than re-compressing. Legacy `portfolio-1..6.jpg` and `cyberpunk/` deleted.
+2. [~] Placeholder text — only the contact email (`hello@amyphotography.com`) is fake; Instagram (@captivate.amy) is real; prices/testimonials sections were removed
 3. [x] GitHub Pages verified: live at varunmoka7.github.io/amy-photography, built from main/root, HTTPS enforced
-4. [ ] Custom domain: **amyteng.com** (purchased by Amy). CNAME in Pages settings; DNS at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io`; enforce HTTPS
-5. [x] SEO: meta description, Open Graph/Twitter tags, SVG favicon done. Note: og:image/og:url point at varunmoka7.github.io — update both when amyteng.com goes live.
-6. [ ] Later: Instagram feed section, client gallery links, testimonial photos
-7. [ ] Later (optional): booking form backend if email-only becomes insufficient
+4. [ ] Custom domain: **amyteng.com** (purchased by Amy). DNS FIRST at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io` — THEN CNAME in Pages settings; enforce HTTPS
+5. [x] SEO: Berlin-targeted title/meta, LocalBusiness JSON-LD, canonical, OG/Twitter tags, favicon. Note: og:url/og:image/canonical/JSON-LD urls point at varunmoka7.github.io — update all when amyteng.com goes live.
+6. [ ] Before launch (waiting on Amy): real email (3 places: contact list, mailto, js/main.js fallback), Web3Forms key + consent checkbox + captcha, Impressum/Datenschutz page
+7. [ ] Later: Instagram feed section, client gallery links, testimonial photos, German-language page
 
 ## Guardrails
 
 - Ask before deleting files, restructuring folders, or changing the design system
 - Never commit real client photos without confirming usage rights
-- Placeholder contact details (`hello@amyphotography.com`, `@amy.photography`) are not real — confirm actual details before publishing them
+- Contact email is real: `amyteng_@hotmail.com`. Placeholder Instagram handle (`@amy.photography`) is not real — confirm actual details before publishing them
