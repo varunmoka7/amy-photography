@@ -31,7 +31,16 @@ navLinks.addEventListener("click", (e) => {
 const slides = document.querySelectorAll(".hero-slide");
 if (slides.length > 1) {
   let current = 0;
+  // Slides 2+ load after the first paint so they don't delay the LCP image
+  const hydrate = () => {
+    document.querySelectorAll(".hero-slide[data-src]").forEach((img) => {
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+    });
+  };
+  window.addEventListener("load", hydrate, { once: true });
   const show = (i) => {
+    hydrate();
     slides[current].classList.remove("is-active");
     slides[current].setAttribute("aria-hidden", "true");
     current = (i + slides.length) % slides.length;
