@@ -5,8 +5,7 @@ Guidance for AI assistants (Claude, Cursor, etc.) working in this repository.
 ## Project
 
 Portfolio + booking website for **Amy Photography** (portraits & family photographer).
-Live via **GitHub Pages** from `varunmoka7/amy-photography`, branch `main`, root folder.
-A custom domain will be attached (owner: Varun, varunmoka7@gmail.com).
+Live at **https://amyteng.com** via GitHub Pages from `varunmoka7/amy-photography`, branch `main`, root folder (repo owner: Varun, varunmoka7@gmail.com; domain owned by Amy, DNS at Squarespace).
 
 ## Stack
 
@@ -50,8 +49,8 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 1. [x] Real photos live: About (`amy.jpg`), 5-slide hero slideshow, and 50-photo editorial masonry gallery (`images/portfolio/`). All images re-encoded to JPG q78 (2026-08-06); regenerate from `documents/album/` originals rather than re-compressing. Legacy `portfolio-1..6.jpg` and `cyberpunk/` deleted.
 2. [x] Placeholder text — contact email now real (`amyteng_@hotmail.com`); Instagram (@captivate.amy) is real; prices/testimonials sections were removed
 3. [x] GitHub Pages verified: live at varunmoka7.github.io/amy-photography, built from main/root, HTTPS enforced
-4. [ ] Custom domain: **amyteng.com** (purchased by Amy). DNS FIRST at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io` — THEN CNAME in Pages settings; enforce HTTPS
-5. [x] SEO: Berlin-targeted title/meta, LocalBusiness JSON-LD, canonical, OG/Twitter tags, favicon. Note: og:url/og:image/canonical/JSON-LD urls point at varunmoka7.github.io — update all when amyteng.com goes live.
+4. [x] Custom domain live: **amyteng.com** (2026-08-06). DNS at Squarespace → GitHub Pages A records + `www` CNAME → `varunmoka7.github.io`; CNAME file committed; HTTPS cert issued (expires 2026-11-04, auto-renews) and enforcement enabled
+5. [x] SEO: Berlin-targeted title/meta, LocalBusiness JSON-LD, canonical, OG/Twitter tags, favicon. og:url/og:image/canonical/JSON-LD all point at https://amyteng.com/ (updated 2026-08-06)
 6. [ ] Before launch (waiting on Amy): Impressum/Datenschutz page. Contact form parked (no Web3Forms key obtainable yet) — booking is email-only for now; re-add form + consent checkbox + captcha when the key arrives. Real email done (`amyteng_@hotmail.com`)
 7. [ ] Later: Instagram feed section, client gallery links, testimonial photos, German-language page
 

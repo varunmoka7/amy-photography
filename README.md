@@ -1,6 +1,6 @@
 # Amy Teng Photography — Website
 
-**Live site: https://varunmoka7.github.io/amy-photography/**
+**Live site: https://amyteng.com** (GitHub Pages, custom domain; varunmoka7.github.io/amy-photography redirects here)
 
 Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Booking via email link (Web3Forms form parked until access key is registered — see git history).
 
