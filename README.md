@@ -2,14 +2,14 @@
 
 **Live site: https://varunmoka7.github.io/amy-photography/**
 
-Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Contact via Web3Forms form (free tier) + email link.
+Portraits & family photography portfolio. Pure HTML/CSS/JS — no build step, no dependencies. Booking via email link (Web3Forms form parked until access key is registered — see git history).
 
 ## Structure
 
 ```
 index.html        — the whole site (single page)
 css/style.css     — all styling
-js/main.js        — nav, hero slideshow, contact form, gallery lightbox
+js/main.js        — nav, hero slideshow, gallery lightbox
 images/           — real photos (hero slides + portfolio gallery)
 ```
 
@@ -24,7 +24,7 @@ python3 -m http.server 8000
 
 ## Remaining placeholders
 
-1. **Contact form key**: the Web3Forms `access_key` in `index.html` is `WEB3FORMS_KEY_PENDING` — register Amy's email (`amyteng_@hotmail.com`) at web3forms.com and swap in the real key to activate deliveries.
+1. **Contact form**: removed for now (booking is a mailto CTA). To restore: register `amyteng_@hotmail.com` at web3forms.com, restore the form markup + JS from git history (pre-2bdc7a0), and set the real `access_key`.
 
 ## Deploy to GitHub Pages
 

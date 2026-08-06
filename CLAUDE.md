@@ -43,7 +43,7 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 
 - **Preview locally**: `python3 -m http.server 8000` → http://localhost:8000
 - **Deploy**: commit + push to `main`; GitHub Pages redeploys automatically (~1 min)
-- **Booking**: contact form via Web3Forms free tier (no backend; POSTs to api.web3forms.com). Access key in `index.html` is `WEB3FORMS_KEY_PENDING` until Amy's real email is registered — swap it to activate. `mailto:` link kept as fallback
+- **Booking**: by email (`mailto:` CTA card in #book). The Web3Forms form was removed until an access key can be registered for `amyteng_@hotmail.com` — restore form markup + JS from git history and add the key to reactivate. Form field CSS kept in style.css for that restore.
 
 ## Current status / TODO
 
@@ -52,7 +52,7 @@ Do not introduce build tools, package managers, or frameworks without explicit a
 3. [x] GitHub Pages verified: live at varunmoka7.github.io/amy-photography, built from main/root, HTTPS enforced
 4. [ ] Custom domain: **amyteng.com** (purchased by Amy). DNS FIRST at registrar — A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` CNAME → `varunmoka7.github.io` — THEN CNAME in Pages settings; enforce HTTPS
 5. [x] SEO: Berlin-targeted title/meta, LocalBusiness JSON-LD, canonical, OG/Twitter tags, favicon. Note: og:url/og:image/canonical/JSON-LD urls point at varunmoka7.github.io — update all when amyteng.com goes live.
-6. [ ] Before launch (waiting on Amy): Web3Forms key + consent checkbox + captcha, Impressum/Datenschutz page. Real email done (`amyteng_@hotmail.com` in all 3 places)
+6. [ ] Before launch (waiting on Amy): Impressum/Datenschutz page. Contact form parked (no Web3Forms key obtainable yet) — booking is email-only for now; re-add form + consent checkbox + captcha when the key arrives. Real email done (`amyteng_@hotmail.com`)
 7. [ ] Later: Instagram feed section, client gallery links, testimonial photos, German-language page
 
 ## Guardrails

@@ -51,35 +51,6 @@ if (slides.length > 1) {
   document.querySelector(".hero-next").addEventListener("click", () => show(current + 1));
 }
 
-// Contact form (Web3Forms)
-const contactForm = document.querySelector(".contact-form");
-if (contactForm) {
-  const status = contactForm.querySelector(".form-status");
-  contactForm.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector("button[type=submit]");
-    btn.disabled = true;
-    status.className = "form-status";
-    try {
-      const data = new FormData(contactForm);
-      const name = `${data.get("first_name") || ""} ${data.get("last_name") || ""}`.trim();
-      data.append("subject", `New inquiry from ${name || "the website"}`);
-      const res = await fetch(contactForm.action, { method: "POST", body: data });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
-      if (!json.success) throw new Error(json.message);
-      contactForm.reset();
-      status.textContent = "Thank you — your note is on its way. I'll reply within one business day.";
-      status.classList.add("ok");
-    } catch {
-      status.textContent = "Hmm, that didn't go through. Please email me directly at amyteng_@hotmail.com.";
-      status.classList.add("err");
-    } finally {
-      btn.disabled = false;
-    }
-  });
-}
-
 // Lightbox for gallery (keyboard-accessible)
 const lightbox = document.querySelector(".lightbox");
 if (lightbox) {
